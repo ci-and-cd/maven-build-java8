@@ -112,4 +112,15 @@
             </properties>
         </profile>
     </profiles>
+
+    <repositories>
+        <!-- Make artifacts in OSSRH-snapshots available -->
+        <repository>
+            <id>OSSRH-snapshots</id>
+            <name>central snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
 </project>
