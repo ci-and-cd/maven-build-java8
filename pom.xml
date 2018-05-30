@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>maven-build-java8</artifactId>
-    <description>Parent pom for maven projects that uses java 8</description>
+    <description>Parent pom for maven projects that use java 8</description>
     <name>maven-build-java8</name>
     <packaging>pom</packaging>
     <version>0.0.1.OSS-SNAPSHOT</version>
@@ -47,6 +47,10 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <compilerVersion>${java.version}</compilerVersion>
+
+
+
+
                 </configuration>
             </plugin>
             <plugin>
