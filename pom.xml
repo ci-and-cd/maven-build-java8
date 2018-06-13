@@ -117,6 +117,7 @@
         </profile>
     </profiles>
 
+    <!-- @formatter:off -->
     <repositories>
         <!-- Make artifacts in OSSRH-snapshots available -->
         <repository>
@@ -127,4 +128,5 @@
             <snapshots><enabled>true</enabled></snapshots>
         </repository>
     </repositories>
+    <!-- @formatter:on -->
 </project>
