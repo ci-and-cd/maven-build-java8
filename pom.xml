@@ -6,14 +6,14 @@
     <parent>
         <groupId>cn.home1</groupId>
         <artifactId>build-docker</artifactId>
-        <version>0.0.1.OSS</version>
+        <version>0.0.5.OSS</version>
     </parent>
 
     <artifactId>maven-build-java8</artifactId>
     <description>Parent pom for maven projects that use java 8</description>
     <name>maven-build-java8</name>
     <packaging>pom</packaging>
-    <version>0.0.1.OSS</version>
+    <version>0.0.2.OSS</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -117,8 +117,16 @@
         </profile>
     </profiles>
 
+    <!-- @formatter:off -->
     <repositories>
-        <!-- Make artifacts in OSSRH-snapshots available -->
+        <!-- Make artifacts in OSSRH repositories available -->
+        <repository>
+            <id>OSSRH-releases</id>
+            <name>central releases</name>
+            <url>https://oss.sonatype.org/content/repositories/releases/</url>
+            <releases><enabled>true</enabled><updatePolicy>${repositories.releases.updatePolicy}</updatePolicy></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
         <repository>
             <id>OSSRH-snapshots</id>
             <name>central snapshots</name>
@@ -127,4 +135,14 @@
             <snapshots><enabled>true</enabled></snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>central</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <releases><enabled>true</enabled><updatePolicy>${repositories.releases.updatePolicy}</updatePolicy></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    <!-- @formatter:on -->
 </project>
