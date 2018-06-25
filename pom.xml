@@ -13,7 +13,7 @@
     <description>Parent pom for maven projects that use java 8</description>
     <name>maven-build-java8</name>
     <packaging>pom</packaging>
-    <version>0.0.4.OSS</version>
+    <version>0.0.5.OSS-SNAPSHOT</version>
 
     <properties>
         <java.version>1.8</java.version>
