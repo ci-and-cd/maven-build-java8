@@ -6,14 +6,14 @@
     <parent>
         <groupId>cn.home1</groupId>
         <artifactId>build-docker</artifactId>
-        <version>0.0.5.OSS</version>
+        <version>0.0.7.OSS</version>
     </parent>
 
     <artifactId>maven-build-java8</artifactId>
     <description>Parent pom for maven projects that use java 8</description>
     <name>maven-build-java8</name>
     <packaging>pom</packaging>
-    <version>0.0.3.OSS</version>
+    <version>0.0.4.OSS</version>
 
     <properties>
         <java.version>1.8</java.version>
